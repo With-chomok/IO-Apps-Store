@@ -24,8 +24,10 @@ const router = createBrowserRouter([
           Component: Home
         },
         {
+        
           path: "/products",
           Component: Product
+          
         },
         {
           path: '/apps',
