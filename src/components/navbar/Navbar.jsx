@@ -51,7 +51,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end  md:mr-20">
         <Link to='https://github.com/With-chomok' target="_blank"
-          rel="noopener noreferrer" className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white">
+          rel="noopener noreferrer" className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white hover:scale-105 transition-all">
           <i className="fa-brands fa-github"></i> Contribute
         </Link>
       </div>

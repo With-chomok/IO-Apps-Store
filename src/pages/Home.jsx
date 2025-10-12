@@ -1,11 +1,12 @@
 import React from "react";
 import Hero from "../assets/hero.png";
-import { useLoaderData } from "react-router";
+
 import HomeCardDisplay from "../components/loddinSpin/HomeCardDisplay";
+import useCardHook from "../components/hooks/useCardHook";
 
 const Home = () => {
-  const Datas = useLoaderData();
-
+  const {data, loading, error} = useCardHook()
+  const SliceData = data.slice(0, 8)
   
   return (
     <>
@@ -29,7 +30,7 @@ const Home = () => {
             href="https://play.google.com/store/apps?hl=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn text-[#001931] flex items-center gap-2 transition-all duration-300 hover:bg-gradient-to-r font-medium hover:from-[#9F62F2] hover:to-[#632EE3] hover:text-white">
+            className="btn text-[#001931] flex items-center gap-2 transition-all duration-300 hover:bg-gradient-to-r font-medium hover:from-[#9F62F2] hover:to-[#632EE3] hover:text-white hover:scale-105 ">
             <img
               className="w-5 rounded-sm"
               src="https://i.ibb.co.com/1fnCtHTw/play.jpg"
@@ -41,7 +42,7 @@ const Home = () => {
             href="https://www.apple.com/store"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn text-[#001931] flex items-center gap-2 transition-all duration-300 hover:bg-gradient-to-r font-medium hover:from-[#9F62F2] hover:to-[#632EE3] hover:text-white">
+            className="btn text-[#001931] flex items-center gap-2  duration-300 hover:bg-gradient-to-r font-medium hover:from-[#9F62F2] hover:to-[#632EE3] hover:text-white hover:scale-105 transition-all">
             <img
               className="w-5 rounded-sm"
               src="https://i.ibb.co.com/d9pDmpN/appstore.jpg"
@@ -90,10 +91,21 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
             {
-              Datas.map(data => <HomeCardDisplay key={data.id} data={data}></HomeCardDisplay>)
+              SliceData.map(data => <HomeCardDisplay key={data.id} data={data}></HomeCardDisplay>)
             }
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center mb-59">
+      <a
+            href="./apps"
+            
+            rel="noopener noreferrer"
+            className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] hover:scale-105 transition-all text-white">
+            <i className="fa-solid fa-eye "></i>
+            Show all
+          </a>
+
       </div>
     </>
   );
