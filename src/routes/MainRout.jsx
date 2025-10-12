@@ -21,6 +21,8 @@ const router = createBrowserRouter([
         {
           index:true,
           path: "/home",
+          hydrateFallbackElement: <div>Loading server data...</div>,
+          loader:() => fetch('TrendingAppData.json'),
           Component: Home
         },
         {
