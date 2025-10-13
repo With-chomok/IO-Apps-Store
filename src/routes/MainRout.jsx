@@ -7,46 +7,42 @@ import Home from "../pages/Home";
 import ErrorPage from "../pages/ErrorPage";
 import InstalledApps from "../pages/InstalledApps";
 import Apps from "../pages/Apps";
-import AppDetails from '../pages/AppDetails'
+import AppDetails from "../pages/AppDetails";
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
-    errorElement: <ErrorPage/>,
-    
+    errorElement: <ErrorPage />,
+
     children: [
-      
-        {
-          index:true,
-          hydrateFallbackElement: <div>Loading server data...</div>,
-          loader:() => fetch('TrendingAppData.json'),
-          Component: Home
-        },
-        {
-          path:'/home',
-          
-          loader:() => fetch('TrendingAppData.json'),
-          Component: Home
-        },
-        {
-        
-          path: "/products",
-          Component: Product
-          
-        },
-        {
-          path: '/apps',
-          Component: Apps
-        },
-        {
-          path: '/installation',
-          Component: InstalledApps
-        },
-        {
-          path: '/appDetails/:id',
-          element: <AppDetails></AppDetails>
-        }
-    ]
+      {
+        index: true,
+        hydrateFallbackElement: <div>Loading server data...</div>,
+
+        Component: Home,
+      },
+      {
+        path: "/home",
+
+        Component: Home,
+      },
+      {
+        path: "/products",
+        Component: Product,
+      },
+      {
+        path: "/apps",
+        Component: Apps,
+      },
+      {
+        path: "/installation",
+        Component: InstalledApps,
+      },
+      {
+        path: "/appDetails/:id",
+        element: <AppDetails></AppDetails>,
+      },
+    ],
   },
 ]);
-export default router
+export default router;

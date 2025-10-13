@@ -6,10 +6,10 @@ const useCardHook = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null)
 
-
+    
     useEffect(() => {
         setLoading(true)
-        axios('./TrendingAppData.json')
+        axios('../TrendingAppData.json')
         .then(data => setData(data.data))
         .catch(err => setError(err))
         .finally(() => setLoading(false))
