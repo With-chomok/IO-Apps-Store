@@ -1,11 +1,16 @@
+import { Link } from "react-router";
+
 const HomeCardDisplay = ({ data }) => {
 
-    const { image, title, downloads, ratingAvg } = data;
+
+    const {id, image, title, downloads, ratingAvg } = data;
+    
+
     
 
   return (
     <div>
-      <div className="card bg-base-100  shadow-sm m-5 p-3">
+      <Link to={`/appDetails/${id}`} className="card bg-base-100  shadow-sm m-5 p-3">
         <figure className="w-full h-[200px] overflow-hidden">
           <img
             src={image}
@@ -26,7 +31,7 @@ const HomeCardDisplay = ({ data }) => {
             {ratingAvg}
           </button>
         </div>
-      </div>
+      </Link>
 
     </div>
   );

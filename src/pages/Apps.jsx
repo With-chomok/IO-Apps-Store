@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import useCardHook from "../components/hooks/useCardHook";
 import HomeCardDisplay from "../components/loddinSpin/HomeCardDisplay";
 
 const Apps = () => {
   const { data } = useCardHook();
+  const [search, setSearch] = useState("");
+  const searchResult = search.trim().toLocaleLowerCase();
+
+  const searchApps = searchResult
+    ? data.filter((singleData) =>
+        singleData?.title?.toLocaleLowerCase().includes(searchResult)
+      )
+    : data;
+
+
   return (
     <div>
       <div className="m-20">
@@ -16,7 +26,9 @@ const Apps = () => {
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
           <div className="flex items-center justify-between mt-15 ">
-            <h3 className="text-2xl  font-bold text-[#001931]  ml-5">({data.length}) Apps Found</h3>
+            <h3 className="text-2xl  font-bold text-[#001931]  ml-5">
+              ({searchApps.length}) Apps Found
+            </h3>
             <label className="input">
               <svg
                 className="h-[1em] opacity-50"
@@ -32,11 +44,16 @@ const Apps = () => {
                   <path d="m21 21-4.3-4.3"></path>
                 </g>
               </svg>
-              <input type="search" required placeholder="Search Apps" />
+              <input
+                onChange={(e) => setSearch(e.target.value)}
+                type="search"
+                required
+                placeholder="Search Apps"
+              />
             </label>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
-            {data.map((data) => (
+            {searchApps.map((data) => (
               <HomeCardDisplay key={data.id} data={data}></HomeCardDisplay>
             ))}
           </div>

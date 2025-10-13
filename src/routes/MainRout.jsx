@@ -7,21 +7,24 @@ import Home from "../pages/Home";
 import ErrorPage from "../pages/ErrorPage";
 import InstalledApps from "../pages/InstalledApps";
 import Apps from "../pages/Apps";
-
+import AppDetails from '../pages/AppDetails'
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
     errorElement: <ErrorPage/>,
+    
     children: [
-        // {
-        //     path: '*',
-        //     element: <ErrorPage/>
-        // },
+      
         {
           index:true,
-          path: "/home",
           hydrateFallbackElement: <div>Loading server data...</div>,
+          loader:() => fetch('TrendingAppData.json'),
+          Component: Home
+        },
+        {
+          path:'/home',
+          
           loader:() => fetch('TrendingAppData.json'),
           Component: Home
         },
@@ -38,6 +41,10 @@ const router = createBrowserRouter([
         {
           path: '/installation',
           Component: InstalledApps
+        },
+        {
+          path: '/appDetails/:id',
+          element: <AppDetails></AppDetails>
         }
     ]
   },
