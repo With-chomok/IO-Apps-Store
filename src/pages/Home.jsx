@@ -1,13 +1,13 @@
 import React from "react";
 import Hero from "../assets/hero.png";
 
-import HomeCardDisplay from "../components/loddinSpin/HomeCardDisplay";
+import HomeCardDisplay from "../layouts/loddinSpin/HomeCardDisplay";
 import useCardHook from "../components/hooks/useCardHook";
 
 const Home = () => {
-  const {data, loading, error} = useCardHook()
-  const SliceData = data.slice(0, 8)
-  
+  const { data, loading, error } = useCardHook();
+  const SliceData = data.slice(0, 8);
+
   return (
     <>
       <div className="space-y-10 mt-20 mx-5 md:mx-0 lg:mx-0">
@@ -90,27 +90,23 @@ const Home = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
-            {
-              SliceData.map(data => <HomeCardDisplay key={data.id} data={data}></HomeCardDisplay>)
-            }
+            {SliceData.map((data) => (
+              <HomeCardDisplay key={data.id} data={data}></HomeCardDisplay>
+            ))}
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center mb-59">
-      <a
-            href="./apps"
-            
-            rel="noopener noreferrer"
-            className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] hover:scale-105 transition-all text-white">
-            <i className="fa-solid fa-eye "></i>
-            Show all
-          </a>
-
+        <a
+          href="./apps"
+          rel="noopener noreferrer"
+          className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] hover:scale-105 transition-all text-white">
+          <i className="fa-solid fa-eye "></i>
+          Show all
+        </a>
       </div>
     </>
   );
 };
 
 export default Home;
-
-

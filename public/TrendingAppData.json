@@ -363,7 +363,7 @@
     "image": "https://i.ibb.co.com/84444dLB/Netflix-Netflix.webp",
     "title": "Netflix",
     "companyName": "Netflix, Inc.",
-    "description": "Streaming service for movies & tv",
+    "description": "Netflix is a global streaming platform that delivers an extensive library of movies, TV shows, documentaries, and original productions across every genre imaginable. With its adaptive streaming technology, Netflix automatically adjusts video quality for smooth playback, even on slower networks. Personalized recommendations, powered by advanced algorithms, help users discover new titles based on viewing history and preferences. Notifications inform subscribers of new releases, upcoming shows, and personalized reminders. Netflix allows users to create multiple profiles, manage watchlists, and download content for offline viewing, making it versatile for families and individuals alike. The minimalist interface emphasizes ease of navigation and distraction-free exploration, ensuring an immersive entertainment experience. Beyond traditional streaming, Netflix invests in original films, series, and animations, promoting global talent and cultural storytelling. Subtitles, dubbing options, and accessibility features make content available to a worldwide audience. The platform’s combination of convenience, innovation, and storytelling excellence redefines entertainment, transforming how people experience cinema, relaxation, and creativity in the digital era.",
     "size": 95,
     "reviews": "20M",
     "ratingAvg": 4.6,
@@ -381,7 +381,7 @@
     "image": "https://i.ibb.co.com/3Y045gn6/Pinterest.webp",
     "title": "Pinterest",
     "companyName": "Pinterest, Inc.",
-    "description": "Visual discovery & bookmarking",
+    "description": "Pinterest is a visually immersive discovery and inspiration platform that helps users find ideas for every aspect of life — from fashion and home décor to recipes, travel, design, and lifestyle planning. Users can browse millions of 'Pins' — image-based bookmarks — and organize them into themed boards, making it easy to save, categorize, and revisit inspiration. Pinterest’s algorithm curates personalized recommendations based on user interests and browsing behavior, ensuring that every feed feels uniquely tailored. Beyond aesthetics, Pinterest functions as a powerful visual search engine; users can upload or capture images to find visually similar items, products, or ideas. Notifications inform users about trending topics, saved Pins, and collaborative board activity. The interface is beautifully minimal, emphasizing large visuals with minimal text for clarity and focus. Businesses and creators can showcase portfolios, run targeted ads, and analyze engagement insights. Pinterest promotes creativity, discovery, and planning — transforming ideas into action by helping users visualize goals and projects. Whether you’re redecorating your home, learning new recipes, or planning future adventures, Pinterest provides endless inspiration in a calm, organized, and visually delightful environment.",
     "size": 60,
     "reviews": "8M",
     "ratingAvg": 4.5,
@@ -396,10 +396,10 @@
   },
   {
     "id": 23,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Tinder_logo.svg",
+    "image": "https://i.ibb.co.com/hxSTnHqP/thinder.webp",
     "title": "Tinder",
     "companyName": "Tinder, Inc.",
-    "description": "Dating & social app",
+    "description": "Tinder is the world’s most popular dating and social discovery app that helps people meet, match, and connect. It uses a simple swipe-based interface — swipe right to like someone or left to pass — making the experience fun, fast, and intuitive. Beyond casual dating, Tinder fosters new friendships, networking opportunities, and even long-term relationships. With smart location-based matching and personalized recommendations, users can explore potential matches nearby or globally. The app supports customizable bios, interests, and photos to express personality authentically. Its algorithm adapts over time, improving suggestions as users engage. Safety and privacy tools like profile verification and message filters enhance user confidence. From small-town meetups to cross-country connections, Tinder transforms modern dating into a dynamic, global experience built on curiosity, chemistry, and choice.",
     "size": 50,
     "reviews": "5M",
     "ratingAvg": 4.2,
@@ -414,10 +414,10 @@
   },
   {
     "id": 24,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/YouTube_icon_%282013-2017%29.png",
+    "image": "https://i.ibb.co.com/ZRfdfjwD/youtut.webp",
     "title": "YouTube Music",
     "companyName": "Google LLC",
-    "description": "Music streaming service",
+    "description": "YouTube Music is a modern music streaming platform by Google that lets you listen, explore, and discover songs, albums, and playlists from around the world. It offers a vast catalog of official tracks, live performances, remixes, and exclusive YouTube content. Personalized recommendations learn from your tastes and listening habits to curate unique playlists that evolve with you. With seamless integration between video and audio modes, users can switch between watching and listening without interruptions. Offline downloads, background playback, and ad-free experiences are available with premium access. The interface is clean and responsive, featuring smart search powered by Google’s AI — even if you only remember a few lyrics. YouTube Music redefines how users experience sound, blending visual storytelling, artist discovery, and everyday listening into one engaging, intelligent ecosystem.",
     "size": 85,
     "reviews": "15M",
     "ratingAvg": 4.5,
@@ -432,10 +432,10 @@
   },
   {
     "id": 25,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Apple_logo_black.svg",
+    "image": "https://i.ibb.co.com/rBN5yB8/Apple-TV.webp",
     "title": "Apple TV",
     "companyName": "Apple Inc.",
-    "description": "Streaming platform by Apple",
+    "description": "Apple TV is Apple’s premium streaming service offering original series, movies, and documentaries from top creators around the world. With award-winning productions and cinematic storytelling, it combines the best of entertainment, drama, and innovation. The platform provides a seamless viewing experience across Apple devices, maintaining exceptional video quality with 4K HDR and Dolby Vision support. Users can browse curated categories, personalized recommendations, and exclusive Apple Originals unavailable anywhere else. Notifications inform viewers about new releases and episodes of their favorite shows. The interface is elegant, simple, and free of ads, focusing purely on the content experience. By merging artistry, technology, and accessibility, Apple TV represents Apple’s vision of premium entertainment — immersive, emotional, and beautifully crafted.",
     "size": 90,
     "reviews": "7M",
     "ratingAvg": 4.4,
@@ -450,10 +450,10 @@
   },
   {
     "id": 26,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Google_Play.svg",
+    "image": "https://i.ibb.co.com/NnVyVkHn/Google-Drivegfrf.png",
     "title": "Google Drive",
     "companyName": "Google LLC",
-    "description": "Cloud storage service",
+    "description":"Google Drive is a secure and versatile cloud storage platform that allows users to store, share, and collaborate on files from anywhere. It supports documents, photos, videos, and large projects, all accessible across devices. Users can organize files in folders, set permissions, and collaborate in real-time with others. Integrated with Google Workspace, Drive connects seamlessly to Docs, Sheets, and Slides, simplifying teamwork. The platform includes intelligent search powered by Google AI to locate files instantly, even using keywords within documents. Notifications keep users updated on edits, comments, and sharing activity. Offline access ensures productivity without an internet connection. With strong encryption, privacy controls, and powerful collaboration tools, Google Drive has become an essential space for modern work, learning, and digital storage.",
     "size": 80,
     "reviews": "12M",
     "ratingAvg": 4.3,
@@ -468,10 +468,10 @@
   },
   {
     "id": 27,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Adobe_Creative_Cloud_logo.svg",
+    "image": "https://i.ibb.co.com/Y4yY4X9x/Adobe-Creative-Cloud.webp",
     "title": "Adobe Creative Cloud",
     "companyName": "Adobe Inc.",
-    "description": "Design & productivity tools suite",
+    "description":"Adobe Creative Cloud is a suite of industry-leading design and productivity tools for artists, photographers, and creative professionals. It includes applications like Photoshop, Illustrator, Premiere Pro, After Effects, and Lightroom, empowering users to create across digital and print media. With cloud integration, projects sync automatically across devices, making remote collaboration easy. Notifications update users about app versions, shared files, and creative trends. Adobe’s AI engine, Sensei, enhances workflows by automating tasks like photo correction, masking, and motion graphics. The platform also offers stock images, fonts, and templates to boost creativity. Its intuitive dashboard allows users to manage subscriptions, assets, and project libraries. From concept to final delivery, Creative Cloud fuels imagination and productivity in a seamless ecosystem built for innovation and artistry.",
     "size": 120,
     "reviews": "4M",
     "ratingAvg": 4.2,
@@ -486,10 +486,10 @@
   },
   {
     "id": 28,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Spotify_icon_white.svg",
+    "image": "https://i.ibb.co.com/vvDZPxd5/Apple-Music.webp",
     "title": "Apple Music",
     "companyName": "Apple Inc.",
-    "description": "Music streaming by Apple",
+    "description": "Reels is Instagram’s short-form video platform designed for creativity, self-expression, and entertainment. Users can record, edit, and share 15–90 second videos with audio, effects, and AR filters to showcase their ideas. The Reels feed promotes viral discovery through an algorithm that highlights trending content and creators. Music integration allows synchronization with beats for dynamic storytelling. Notifications keep users informed about views, likes, and shares. Reels also helps brands and influencers reach new audiences through organic visibility and creative campaigns. The interface is fluid and intuitive, encouraging quick scrolling and endless exploration. It’s not just a video tool — it’s a global stage for talent, humor, and inspiration where everyone has a chance to go viral.",
     "size": 65,
     "reviews": "10M",
     "ratingAvg": 4.4,
@@ -504,121 +504,10 @@
   },
   {
     "id": 29,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Instagram_favicon.svg",
-    "title": "Reels",
-    "companyName": "Instagram",
-    "description": "Short video feature",
-    "size": 40,
-    "reviews": "6M",
-    "ratingAvg": 4.1,
-    "downloads": "200M",
-    "ratings": [
-      { "name": "1 star", "count": 10000 },
-      { "name": "2 star", "count": 8000 },
-      { "name": "3 star", "count": 30000 },
-      { "name": "4 star", "count": 120000 },
-      { "name": "5 star", "count": 1300000 }
-    ]
-  },
-  {
-    "id": 30,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/WhatsApp_logo.png",
-    "title": "WhatsApp Business",
-    "companyName": "Meta Platforms, Inc.",
-    "description": "Business messaging tool",
-    "size": 45,
-    "reviews": "4M",
-    "ratingAvg": 4.5,
-    "downloads": "300M",
-    "ratings": [
-      { "name": "1 star", "count": 15000 },
-      { "name": "2 star", "count": 12000 },
-      { "name": "3 star", "count": 40000 },
-      { "name": "4 star", "count": 180000 },
-      { "name": "5 star", "count": 2670000 }
-    ]
-  },
-
-
-
-  {
-    "id": 31,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Slack_Icon.png",
-    "title": "Slack",
-    "companyName": "Slack Technologies",
-    "description": "Team communication & collaboration tool",
-    "size": 75,
-    "reviews": "8M",
-    "ratingAvg": 4.5,
-    "downloads": "100M",
-    "ratings": [
-      { "name": "1 star", "count": 20000 },
-      { "name": "2 star", "count": 15000 },
-      { "name": "3 star", "count": 50000 },
-      { "name": "4 star", "count": 300000 },
-      { "name": "5 star", "count": 4050000 }
-    ]
-  },
-  {
-    "id": 32,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Dropbox_logo_2017.svg",
-    "title": "Dropbox",
-    "companyName": "Dropbox, Inc.",
-    "description": "File storage & sharing service",
-    "size": 80,
-    "reviews": "6M",
-    "ratingAvg": 4.3,
-    "downloads": "400M",
-    "ratings": [
-      { "name": "1 star", "count": 30000 },
-      { "name": "2 star", "count": 20000 },
-      { "name": "3 star", "count": 100000 },
-      { "name": "4 star", "count": 300000 },
-      { "name": "5 star", "count": 2500000 }
-    ]
-  },
-  {
-    "id": 33,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Zoom_Communications_Logo.svg",
-    "title": "Zoom",
-    "companyName": "Zoom Video Communications",
-    "description": "Video conferencing app",
-    "size": 90,
-    "reviews": "14M",
-    "ratingAvg": 4.2,
-    "downloads": "300M",
-    "ratings": [
-      { "name": "1 star", "count": 50000 },
-      { "name": "2 star", "count": 30000 },
-      { "name": "3 star", "count": 120000 },
-      { "name": "4 star", "count": 500000 },
-      { "name": "5 star", "count": 2590000 }
-    ]
-  },
-  {
-    "id": 34,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Skype_logo_2023.svg",
-    "title": "Skype",
-    "companyName": "Skype",
-    "description": "Video & voice calls, chat",
-    "size": 70,
-    "reviews": "10M",
-    "ratingAvg": 4.1,
-    "downloads": "700M",
-    "ratings": [
-      { "name": "1 star", "count": 40000 },
-      { "name": "2 star", "count": 30000 },
-      { "name": "3 star", "count": 150000 },
-      { "name": "4 star", "count": 500000 },
-      { "name": "5 star", "count": 4960000 }
-    ]
-  },
-  {
-    "id": 35,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Adobe_Creative_Cloud_logo.svg",
+    "image": "https://i.ibb.co.com/kV7T8XKh/unnamed.webp",
     "title": "Adobe Creative Cloud",
     "companyName": "Adobe Inc.",
-    "description": "Design & productivity tools suite",
+    "description":  "Adobe Creative Cloud is an all-in-one creative ecosystem built for designers, filmmakers, photographers, illustrators, and storytellers who want their imagination to take center stage. It’s not just a collection of tools — it’s a creative universe that brings together more than twenty professional-grade applications such as Photoshop, Illustrator, Premiere Pro, After Effects, Lightroom, and Adobe XD, each seamlessly integrated through the cloud. Users can design stunning visuals, edit photos with pixel-perfect precision, craft cinematic videos, animate characters, or build responsive web experiences — all from a single connected workspace. Through Adobe Sensei, its powerful AI engine, mundane tasks like background removal, color correction, and smart object tracking become effortless, allowing artists to focus purely on creativity. Every project automatically syncs to the cloud, so you can begin on a desktop, continue on a tablet, and finish on your phone without missing a beat. Creative Cloud Libraries make asset management intuitive — fonts, brushes, graphics, and colors remain consistent across every device and team member. Collaboration sits at the heart of Creative Cloud. Shared project links, live comments, and co-editing features make teamwork fluid and productive. Notifications keep users updated on version changes, new asset uploads, and design feedback in real time. Integration with Adobe Stock and Behance opens the door to millions of royalty-free assets and a vibrant global creative community. With enterprise-grade security, frequent updates, and access to exclusive learning resources, Adobe Creative Cloud constantly evolves to meet the demands of modern creators. Whether you’re editing a blockbuster film, illustrating a children’s book, or crafting a marketing campaign, Adobe Creative Cloud provides the power, precision, and freedom to transform ideas into masterpieces — wherever inspiration strikes.",
     "size": 110,
     "reviews": "4M",
     "ratingAvg": 4.2,
@@ -632,48 +521,12 @@
     ]
   },
   {
-    "id": 36,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Google_Meet_icon_%282020%29.svg",
-    "title": "Google Meet",
-    "companyName": "Google LLC",
-    "description": "Video meeting app",
-    "size": 65,
-    "reviews": "10M",
-    "ratingAvg": 4.4,
-    "downloads": "500M",
-    "ratings": [
-      { "name": "1 star", "count": 30000 },
-      { "name": "2 star", "count": 20000 },
-      { "name": "3 star", "count": 80000 },
-      { "name": "4 star", "count": 300000 },
-      { "name": "5 star", "count": 9650000 }
-    ]
-  },
-  {
-    "id": 37,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Google_Calendar_icon_%282020%29.svg",
-    "title": "Google Calendar",
-    "companyName": "Google LLC",
-    "description": "Time management & scheduling tool",
-    "size": 60,
-    "reviews": "6M",
-    "ratingAvg": 4.6,
-    "downloads": "400M",
-    "ratings": [
-      { "name": "1 star", "count": 20000 },
-      { "name": "2 star", "count": 10000 },
-      { "name": "3 star", "count": 40000 },
-      { "name": "4 star", "count": 250000 },
-      { "name": "5 star", "count": 5680000 }
-    ]
-  },
-  {
-    "id": 38,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/WhatsApp_logo.png",
+    "id": 30,
+    "image": "https://i.ibb.co.com/1YszS594/whats.webp",
     "title": "WhatsApp Business",
     "companyName": "Meta Platforms, Inc.",
-    "description": "Business messaging tool",
-    "size": 55,
+    "description": "WhatsApp Business is a communication app designed to help small and medium-sized businesses connect with customers more efficiently. It offers features like automated greetings, quick replies, and message labels to organize conversations. Businesses can showcase catalogs, product details, and service information directly in chat. Notifications update owners on customer messages and orders in real time. With end-to-end encryption, conversations remain private and secure. The interface mirrors regular WhatsApp, ensuring familiarity for both users and clients. Integrations with Meta’s business tools enable marketing campaigns and analytics. WhatsApp Business helps build trust, maintain relationships, and provide professional support — all within the comfort of a simple, fast, and globally recognized messaging platform.",
+    "size": 45,
     "reviews": "4M",
     "ratingAvg": 4.5,
     "downloads": "300M",
@@ -684,43 +537,9 @@
       { "name": "4 star", "count": 180000 },
       { "name": "5 star", "count": 2670000 }
     ]
-  },
-  {
-    "id": 39,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/LinkedIn_logo_initials.png",
-    "title": "LinkedIn",
-    "companyName": "LinkedIn Corporation",
-    "description": "Professional networking platform",
-    "size": 70,
-    "reviews": "10M",
-    "ratingAvg": 4.2,
-    "downloads": "700M",
-    "ratings": [
-      { "name": "1 star", "count": 100000 },
-      { "name": "2 star", "count": 120000 },
-      { "name": "3 star", "count": 300000 },
-      { "name": "4 star", "count": 1500000 },
-      { "name": "5 star", "count": 5400000 }
-    ]
-  },
-  {
-    "id": 40,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Twitter_logo_blue.svg",
-    "title": "Twitter",
-    "companyName": "Twitter, Inc.",
-    "description": "Social & news platform",
-    "size": 65,
-    "reviews": "18M",
-    "ratingAvg": 4.3,
-    "downloads": "1.0B",
-    "ratings": [
-      { "name": "1 star", "count": 150000 },
-      { "name": "2 star", "count": 100000 },
-      { "name": "3 star", "count": 400000 },
-      { "name": "4 star", "count": 2200000 },
-      { "name": "5 star", "count": 14000000 }
-    ]
   }
+
+  
 ]
 
 

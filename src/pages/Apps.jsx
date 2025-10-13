@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import useCardHook from "../components/hooks/useCardHook";
-import HomeCardDisplay from "../components/loddinSpin/HomeCardDisplay";
+import HomeCardDisplay from "../layouts/loddinSpin/HomeCardDisplay";
 
 const Apps = () => {
   const { data } = useCardHook();
@@ -14,19 +14,18 @@ const Apps = () => {
       )
     : data;
 
-
   return (
     <div>
       <div className="m-20">
         <div className="text-center mt-10 mb-5">
-          <h1 className="text-[#001931] text-[48px] font-bold mb-2">
+          <h1 className="text-[#001931] text-4xl md:text-[48px] font-bold mb-2">
             Our All Applications
           </h1>
-          <p className="text-base text-[#627382]">
+          <p className="text-base text-[#627382]  ">
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
-          <div className="flex items-center justify-between mt-15 ">
-            <h3 className="text-2xl  font-bold text-[#001931]  ml-5">
+          <div className="md:flex  items-center justify-between mt-15 ">
+            <h3 className="text-xl md:text-2xl font-bold text-[#001931] mb-5 md:mb-0 ml-5">
               ({searchApps.length}) Apps Found
             </h3>
             <label className="input">
