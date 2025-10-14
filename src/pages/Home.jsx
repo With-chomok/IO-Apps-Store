@@ -80,7 +80,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="m-20">
+      <div className="md:m-20 m-10">
         <div className="text-center mt-10 mb-5">
           <h1 className="text-[#001931] text-[48px] font-bold mb-2">
             Trending Apps

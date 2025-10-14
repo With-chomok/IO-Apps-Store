@@ -9,14 +9,14 @@ import {
   CartesianGrid,
 } from "recharts";
 
-const RatingsChart = ({ rate }) => {
-  const ratingData = rate.map((item) => ({
+const RatingsChart = ({ ratings }) => {
+  const ratingData = ratings.map((item) => ({
     name: item.name,
     count: item.count,
   }));
 
   return (
-    <div className="w-full h-64 bg-white p-4 rounded-xl">
+    <div className="w-full h-72 bg-white md:p-4 rounded-xl">
       <h3 className="text-[#001931] text-2xl font-semibold mb-4">Ratings</h3>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart layout="vertical" data={ratingData}>

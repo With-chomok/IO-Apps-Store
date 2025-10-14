@@ -16,7 +16,7 @@ const Apps = () => {
 
   return (
     <div>
-      <div className="m-20">
+      <div className="md:m-20 m-20">
         <div className="text-center mt-10 mb-5">
           <h1 className="text-[#001931] text-4xl md:text-[48px] font-bold mb-2">
             Our All Applications

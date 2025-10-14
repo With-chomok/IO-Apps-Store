@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, Route } from "react-router";
 import App from "../App";
 import Navbar from "../components/navbar/Navbar";
 import Product from "../pages/Product";
@@ -13,7 +13,6 @@ const router = createBrowserRouter([
     path: "/",
     Component: MainLayout,
     errorElement: <ErrorPage />,
-
     children: [
       {
         index: true,
@@ -40,8 +39,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/appDetails/:id",
-        element: <AppDetails></AppDetails>,
+        Component: AppDetails,
       },
+    
     ],
   },
 ]);
