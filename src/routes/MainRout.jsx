@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
-    errorElement: <ErrorPage />,
+    
     children: [
       {
         index: true,
@@ -41,6 +41,10 @@ const router = createBrowserRouter([
         path: "/appDetails/:id",
         Component: AppDetails,
       },
+      {
+        path: '*',
+        Component:ErrorPage
+      }
     
     ],
   },

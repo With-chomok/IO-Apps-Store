@@ -16,7 +16,7 @@ const Apps = () => {
 
   return (
     <div>
-      <div className="md:m-20 m-20">
+      <div className="md:m-20 m-17">
         <div className="text-center mt-10 mb-5">
           <h1 className="text-[#001931] text-4xl md:text-[48px] font-bold mb-2">
             Our All Applications
@@ -52,9 +52,15 @@ const Apps = () => {
             </label>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
-            {searchApps.map((data) => (
-              <HomeCardDisplay key={data.id} data={data}></HomeCardDisplay>
-            ))}
+            {searchApps && searchApps.length > 0 ? (
+              searchApps.map((data) => (
+                <HomeCardDisplay key={data.id} data={data} />
+              ))
+            ) : (
+              <div className="col-span-full text-center text-gray-500 font-bold text-4xl mt-10">
+                No App Found 
+              </div>
+            )}
           </div>
         </div>
       </div>

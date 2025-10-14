@@ -80,12 +80,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="md:m-20 m-10">
+      <div className="md:m-20 m-17">
         <div className="text-center mt-10 mb-5">
-          <h1 className="text-[#001931] text-[48px] font-bold mb-2">
+          <h1 className="text-[#001931] md:text-[48px] text-[40px]  font-bold mb-2">
             Trending Apps
           </h1>
-          <p className="text-base text-[#627382]">
+          <p className="text-base  text-[#627382]">
             Explore All Trending Apps on the Market developed by us
           </p>
 
@@ -96,7 +96,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center mb-59">
+      <div className="flex items-center justify-center md:mb-20 mb-10">
         <a
           href="./apps"
           rel="noopener noreferrer"

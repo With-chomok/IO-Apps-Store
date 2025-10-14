@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import useCardHook from "../components/hooks/useCardHook";
 import BarChart from "../components/Rechart/BarChart";
 import toast from "react-hot-toast";
+import ErrorPage from "./ErrorPage";
+import ErrorApp from "./ErrorApp";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -23,14 +25,15 @@ const ProductDetails = () => {
 
 
   if (loading) return <p>Loading.....</p>;
-  if (!singleData) return <p>No data found.</p>;
+  if (!singleData) return <ErrorApp/>;
 
   const {
     image,
     title,
+    companyName,
     description,
     reviews,
-    downloads,
+    downloads, 
     ratingAvg,
     size,
     ratings,
@@ -67,9 +70,9 @@ const ProductDetails = () => {
               {title}
             </h1>
             <p className="text-[#627382]">
-              Developed by{" "}
+              
               <span className="bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent">
-                productive.io
+                {companyName}
               </span>
             </p>
           </div>
