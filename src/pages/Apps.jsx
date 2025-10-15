@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import useCardHook from "../components/hooks/useCardHook";
-import HomeCardDisplay from "../layouts/loddinSpin/HomeCardDisplay";
+import HomeCardDisplay from "./HomeCardDisplay";
+import LoadingSpin from "../components/Loading/LoadingSpin";
 
 const Apps = () => {
-  const { data } = useCardHook();
+  const { data, loading } = useCardHook();
   const [search, setSearch] = useState("");
+  const [searchLoading, setSearchLoading] = useState(false);
   const searchResult = search.trim().toLocaleLowerCase();
 
   const searchApps = searchResult
@@ -13,6 +15,14 @@ const Apps = () => {
         singleData?.title?.toLocaleLowerCase().includes(searchResult)
       )
     : data;
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-[60vh]">
+        <LoadingSpin count={8} />
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -44,7 +54,11 @@ const Apps = () => {
                 </g>
               </svg>
               <input
-                onChange={(e) => setSearch(e.target.value)}
+                onChange={(e) => {
+                  setSearchLoading(true);
+                  setSearch(e.target.value);
+                  setTimeout(() => setSearchLoading(false), 500);
+                }}
                 type="search"
                 required
                 placeholder="Search Apps"
@@ -52,13 +66,17 @@ const Apps = () => {
             </label>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
-            {searchApps && searchApps.length > 0 ? (
+            {searchLoading ? (
+              <div className="col-span-full flex justify-center items-center min-h-[200px]">
+                <LoadingSpin count={4} />
+              </div>
+            ) : searchApps && searchApps.length > 0 ? (
               searchApps.map((data) => (
                 <HomeCardDisplay key={data.id} data={data} />
               ))
             ) : (
               <div className="col-span-full text-center text-gray-500 font-bold text-4xl mt-10">
-                No App Found 
+                No App Found
               </div>
             )}
           </div>

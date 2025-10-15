@@ -8,6 +8,7 @@ import ErrorPage from "../pages/ErrorPage";
 import InstalledApps from "../pages/InstalledApps";
 import Apps from "../pages/Apps";
 import AppDetails from "../pages/AppDetails";
+import LoadingSpin from "../components/Loading/LoadingSpin";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,8 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        hydrateFallbackElement: <div>Loading server data...</div>,
-
+        hydrateFallbackElement: <LoadingSpin/>,
         Component: Home,
       },
       {
@@ -31,10 +31,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/apps",
+        
         Component: Apps,
       },
       {
         path: "/installation",
+        
         Component: InstalledApps,
       },
       {

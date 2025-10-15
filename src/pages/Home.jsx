@@ -1,13 +1,15 @@
 import React from "react";
 import Hero from "../assets/hero.png";
 
-import HomeCardDisplay from "../layouts/loddinSpin/HomeCardDisplay";
+import HomeCardDisplay from "./HomeCardDisplay";
 import useCardHook from "../components/hooks/useCardHook";
+import LoadingSpin from "../components/Loading/LoadingSpin";
+import ErrorApp from "./ErrorApp";
 
 const Home = () => {
   const { data, loading, error } = useCardHook();
   const SliceData = data.slice(0, 8);
-
+  if (error) return <ErrorApp />;
   return (
     <>
       <div className="space-y-10 mt-20 mx-5 md:mx-0 lg:mx-0">
@@ -89,11 +91,15 @@ const Home = () => {
             Explore All Trending Apps on the Market developed by us
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
-            {SliceData.map((data) => (
-              <HomeCardDisplay key={data.id} data={data}></HomeCardDisplay>
-            ))}
-          </div>
+          {loading ? (
+            <LoadingSpin />
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center">
+              {SliceData.map((data) => (
+                <HomeCardDisplay key={data.id} data={data}></HomeCardDisplay>
+              ))}
+            </div>
+          )}
         </div>
       </div>
       <div className="flex items-center justify-center md:mb-20 mb-10">

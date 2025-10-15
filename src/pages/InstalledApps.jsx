@@ -7,7 +7,7 @@ const InstalledApps = () => {
     
   const [installApps, setInstallApps] = useState([]);
   const [order, setOrder] = useState("none");
-
+  
   const sortedItem = () => {
     if (order === "dowloads-desc") {
       return [...installApps].sort((a, b) => b.size - a.size);
@@ -22,6 +22,7 @@ const InstalledApps = () => {
     const installationList =
       JSON.parse(localStorage.getItem("installation")) || [];
     let updatedList = installationList.filter(p => p.id !== id)
+     
      
     setInstallApps(updatedList)
     toast.success(` Uninstall successfully! 😓🥺`);
@@ -52,7 +53,7 @@ const InstalledApps = () => {
         </div>
 
         {sortedItem().map((p) => (
-          <DisplayInstallCard handleRemove={handleRemove} p={p}></DisplayInstallCard>
+          <DisplayInstallCard key={p.id} handleRemove={handleRemove} p={p}></DisplayInstallCard>
         ))}
       </div>
     </div>

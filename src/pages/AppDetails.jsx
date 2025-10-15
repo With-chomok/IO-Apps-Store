@@ -5,6 +5,7 @@ import BarChart from "../components/Rechart/BarChart";
 import toast from "react-hot-toast";
 import ErrorPage from "./ErrorPage";
 import ErrorApp from "./ErrorApp";
+import LoadingSpin from "../components/Loading/LoadingSpin";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -24,9 +25,9 @@ const ProductDetails = () => {
   }, [singleData]);
 
 
-  if (loading) return <p>Loading.....</p>;
+  if (loading) return <LoadingSpin/>;
   if (!singleData) return <ErrorApp/>;
-
+  if(error) return <ErrorApp/>
   const {
     image,
     title,
