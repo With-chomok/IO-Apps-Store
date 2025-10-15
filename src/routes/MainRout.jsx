@@ -1,54 +1,29 @@
-import { createBrowserRouter, Route } from "react-router";
-import App from "../App";
-import Navbar from "../components/navbar/Navbar";
-import Product from "../pages/Product";
+import { HashRouter, createRoutesFromElements, RouterProvider, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
-import ErrorPage from "../pages/ErrorPage";
-import InstalledApps from "../pages/InstalledApps";
+import Product from "../pages/Product";
 import Apps from "../pages/Apps";
+import InstalledApps from "../pages/InstalledApps";
 import AppDetails from "../pages/AppDetails";
+import ErrorPage from "../pages/ErrorPage";
 import LoadingSpin from "../components/Loading/LoadingSpin";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    Component: MainLayout,
-    
-    children: [
-      {
-        index: true,
-        hydrateFallbackElement: <LoadingSpin/>,
-        Component: Home,
-      },
-      {
-        path: "/home",
 
-        Component: Home,
-      },
-      {
-        path: "/products",
-        Component: Product,
-      },
-      {
-        path: "/apps",
-        
-        Component: Apps,
-      },
-      {
-        path: "/installation",
-        
-        Component: InstalledApps,
-      },
-      {
-        path: "/appDetails/:id",
-        Component: AppDetails,
-      },
-      {
-        path: '*',
-        Component:ErrorPage
-      }
-    
-    ],
-  },
-]);
-export default router;
+const routes = createRoutesFromElements(
+  <Route path="/" element={<MainLayout />}>
+    <Route index element={<Home />} />
+    <Route path="home" element={<Home />} />
+    <Route path="products" element={<Product />} />
+    <Route path="apps" element={<Apps />} />
+    <Route path="installation" element={<InstalledApps />} />
+    <Route path="appDetails/:id" element={<AppDetails />} />
+    <Route path="*" element={<ErrorPage />} />
+  </Route>
+);
+
+export default function AppRouter() {
+  return (
+    <HashRouter>
+      <RouterProvider router={routes} fallbackElement={<LoadingSpin />} />
+    </HashRouter>
+  );
+}
