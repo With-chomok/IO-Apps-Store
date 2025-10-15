@@ -1,7 +1,11 @@
-# React + Vite
+# This is AppGalaxy. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based web application where users can explore, search, and install trending apps in one place.
+It features real-time search, sorting, dynamic loading animations, and persistent installations using localStorage — all wrapped in a clean and responsive design powered by Tailwind CSS and React Router.
 
+# Using Technology------
+## This project for creation using by:- 
+### html, css, tallwind CSS , JavaScript , ReactJs 
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
