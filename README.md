@@ -4,7 +4,7 @@ A modern React-based web application where users can explore, search, and instal
 It features real-time search, sorting, dynamic loading animations, and persistent installations using localStorage — all wrapped in a clean and responsive design powered by Tailwind CSS and React Router.
 
 # Using Technology------
-## This project for creation using by:- 
+## This project was built with:- 
 ### html, css, tallwind CSS , JavaScript , ReactJs 
 Currently, two official plugins are available:
 
